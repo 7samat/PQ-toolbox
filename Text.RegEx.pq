@@ -1,4 +1,5 @@
 let
+    //function code
     fun = (input as text,pattern as text) as list =>
     let
         x = Character.FromNumber(34) & Text.Replace(input,Character.FromNumber(34),"\"&Character.FromNumber(34)) & Character.FromNumber(34),
@@ -16,7 +17,7 @@ let
     in 
     result,
 
-    
+    //documentation metadata
     myMeta =         [
             Documentation.Name = "Text.RegEx",
             Documentation.Author = "Jakub Tamas",
@@ -41,7 +42,7 @@ let
             }
         ],
 
-
+    //function+meta type definition
     myType = type function
     (
         input as text,pattern as text
